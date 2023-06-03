@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants/'
 import { logo, menu, close } from '../assets'
-import '../styles.css'
+import '../stylesNavbar.css'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
-          className='flex items-center gap-2'
+          className='flex items-center gap-2 name'
           onClick={() => {
             setActive('')
             window.scrollTo(0, 0)
@@ -25,7 +25,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
 
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+          <p className='text-white text-[18px] font-bold flex'>
             Priyanshu &nbsp;
             <span className='sm:block hidden'>| Programmer</span>
           </p>
@@ -40,7 +40,7 @@ const Navbar = () => {
               } ${styles.active} text-[18px]  font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>
+              <a href={`#${nav.id}`} className='neon'>
                 <span className='styling'></span>
                 <span className='styling'></span>
                 <span className='styling'></span>

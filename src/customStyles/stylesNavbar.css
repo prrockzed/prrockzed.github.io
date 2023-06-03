@@ -1,23 +1,23 @@
-a {
+.neon {
   position: relative;
   padding: 5px 10px;
   color: #2196f3;
   overflow: hidden;
 }
 
-a:hover {
+.neon:hover {
   color: #000;
   background: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0.6s;
 }
 
-a .styling {
+.neon .styling {
   position: absolute;
   display: block;
 }
 
-a .styling:nth-child(1) {
+.neon .styling:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -25,12 +25,12 @@ a .styling:nth-child(1) {
   background: linear-gradient(90deg, transparent, #2196f3);
 }
 
-a:hover .styling:nth-child(1) {
+.neon:hover .styling:nth-child(1) {
   left: 100%;
   transition: 0.2s;
 }
 
-a .styling:nth-child(2) {
+.neon .styling:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -38,13 +38,13 @@ a .styling:nth-child(2) {
   background: linear-gradient(180deg, transparent, #2196f3);
 }
 
-a:hover .styling:nth-child(2) {
+.neon:hover .styling:nth-child(2) {
   top: 100%;
   transition: 0.2s;
   transition-delay: 0.15s;
 }
 
-a .styling:nth-child(3) {
+.neon .styling:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -52,13 +52,13 @@ a .styling:nth-child(3) {
   background: linear-gradient(270deg, transparent, #2196f3);
 }
 
-a:hover .styling:nth-child(3) {
+.neon:hover .styling:nth-child(3) {
   right: 100%;
   transition: 0.2s;
   transition-delay: 0.3s;
 }
 
-a .styling:nth-child(4) {
+.neon .styling:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -66,8 +66,21 @@ a .styling:nth-child(4) {
   background: linear-gradient(360deg, transparent, #2196f3);
 }
 
-a:hover .styling:nth-child(4) {
+.neon:hover .styling:nth-child(4) {
   bottom: 100%;
   transition: 0.2s;
   transition-delay: 0.45s;
+}
+
+.name {
+  position: relative;
+  padding: 5px 10px;
+  color: #ea580c;
+  overflow: hidden;
+}
+
+.name:hover {
+  color: #000;
+  background: #ea580c;
+  box-shadow: 0 0 10px #ea580c, 0 0 40px #ea580c, 0 0 80px #ea580c;
 }
