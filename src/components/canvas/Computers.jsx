@@ -21,7 +21,7 @@ const Computers = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={0.75}
+        scale={0.7}
         position={[0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
