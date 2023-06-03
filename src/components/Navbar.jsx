@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants/'
 import { logo, menu, close } from '../assets'
-import '../stylesNavbar.css'
+import '../customStyles/stylesNavbar.css'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed top-0 z-20 backdrop-filter backdrop-blur-xl `}
+      className={`${styles.paddingX} w-full flex items-center pt-3 pb-2 fixed top-0 z-20 backdrop-filter backdrop-blur-xl `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
