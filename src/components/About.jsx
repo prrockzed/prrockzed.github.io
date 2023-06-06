@@ -24,6 +24,9 @@ const About = () => {
     })
   })
 
+  // <img src={prrockzed} alt='My image' className='h-auto max-w-md ml-auto' />
+  // className='h-auto max-w-md ml-auto'
+  //   <span ref={type}></span>
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -31,13 +34,15 @@ const About = () => {
         <p className={styles.sectionSubText}>Know More About Me</p>
         <br />
       </motion.div>
-
-      <img src={prrockzed} alt='My image' className='h-auto max-w-md ml-auto' />
-      <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-xl leading-[30px] '
-      >
-        <span ref={type}></span>
+      <motion.p variants={fadeIn('', '', 0.1, 1)}>
+        <div className='flex'>
+          <div className='max-w-[50%]'>
+            <img src={prrockzed} alt='My image' />
+          </div>
+          <div className='pl-8 pt-10 text-secondary text-[27px] max-w-xl'>
+            <p ref={type}></p>
+          </div>
+        </div>
       </motion.p>
     </>
   )
