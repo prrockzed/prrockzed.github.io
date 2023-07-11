@@ -1,3 +1,32 @@
-# prrockzed.github.io
+# prrockzedFolio - My Portfolio Website
+Hi everyone! I am Priyanshu Ranjan and this is the readme of my portfolio website.
 
-Hey everyone, I am Priyanshu Ranjan and this is my portfolio website. It is a 3D website built using ThreeJS library.
+The website describes my education, talents, projects - in a gist, my overall self.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+## Overview
+
+## Technologies Used
+- ThreeJS
+- Tailwind
+- React
+- TypedJS
+- React Tilt
+- Postcss
+- Autoprefixer
+- Javascript
+- Git
+- Github
+
+## Features
+
+## Contact
+
+## Acknowledgements
