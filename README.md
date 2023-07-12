@@ -7,11 +7,14 @@ The website describes my education, talents, projects - in a gist, my overall se
 
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
-- [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
+Here's what it looks like:
+
+<img width="1440" alt="prrockzed 2023-07-12 at 10 39 25 PM" src="https://github.com/prrockzed/prrockzed.github.io/assets/97661506/6fd3b895-676f-4239-ace9-fa8402d9605f">
+
 
 ## Technologies Used
 - ThreeJS
@@ -25,8 +28,7 @@ The website describes my education, talents, projects - in a gist, my overall se
 - Git
 - Github
 
-## Features
-
 ## Contact
+Mail me at: priyanshuranjan2806@gmail.com
 
 ## Acknowledgements
