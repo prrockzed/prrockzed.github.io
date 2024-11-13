@@ -25,8 +25,7 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // useful metadata like html lang.
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -66,6 +65,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -83,7 +86,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/prrockzed',
           label: 'GitHub',
           position: 'right',
         },
@@ -93,11 +96,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Social Media',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Linkedin',
+              to: 'https://linkedin.com/in/prrockzed',
+            },
+            {
+              label: 'Instagram',
+              to: 'https://instagram.com/prrockzed',
+            },
+            {
+              label: 'Facebook',
+              to: 'https://facebook.com/prrockzed',
             },
           ],
         },
@@ -105,16 +116,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
+              label: 'X (Formerly Twitter)',
+              to: 'https://x.com/prrockzed',
+            },
+            {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              to: 'https://instagram.com/prrockzed',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              to: 'https://discord.gg/yV5nRWjDRJ',
             },
           ],
         },
@@ -122,17 +133,21 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'GitHub',
+              to: 'https://github.com/prrockzed/prrockzed.github.io',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Quora',
+              to: 'https://quora.com/profile/Prrockzed',
+            },
+            {
+              label: 'Reddit',
+              to: 'https://reddit.com/user/prrockzed/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} prrockzed`,
     },
     prism: {
       theme: prismThemes.github,
