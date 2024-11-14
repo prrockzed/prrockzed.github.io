@@ -1,3 +1,8 @@
+greetings:
+  label: Greetings
+  permalink: /greetings
+  description: First Post Probably
+
 facebook:
   label: Facebook
   permalink: /facebook

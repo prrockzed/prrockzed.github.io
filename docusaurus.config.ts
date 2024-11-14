@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'prrockzed',
   tagline: 'Priyanshu Ranjan',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://prrockzed.github.io',
@@ -70,7 +70,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    //image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'prrockzed',
       logo: {
@@ -82,11 +82,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blogs', position: 'left'},
         {
-          href: 'https://github.com/prrockzed',
+          to: 'https://github.com/prrockzed',
           label: 'GitHub',
           position: 'right',
         },
