@@ -82,9 +82,18 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'About',
         },
-        {to: '/blog', label: 'Blogs', position: 'left'},
+        {
+          to: '/blog',
+          label: 'Blogs',
+          position: 'left'
+        },
+        {
+          href: 'https://drive.google.com/file/d/1FSuNphePjptV4gJw8vXQwUvyBrGmC5aS/view',
+          label: 'Resume',
+          position: 'right',
+        },
         {
           to: 'https://github.com/prrockzed',
           label: 'GitHub',
@@ -94,59 +103,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Social Media',
-          items: [
-            {
-              label: 'Linkedin',
-              to: 'https://linkedin.com/in/prrockzed',
-            },
-            {
-              label: 'Instagram',
-              to: 'https://instagram.com/prrockzed',
-            },
-            {
-              label: 'Facebook',
-              to: 'https://facebook.com/prrockzed',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'X (Formerly Twitter)',
-              to: 'https://x.com/prrockzed',
-            },
-            {
-              label: 'Stack Overflow',
-              to: 'https://instagram.com/prrockzed',
-            },
-            {
-              label: 'Discord',
-              to: 'https://discord.gg/yV5nRWjDRJ',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              to: 'https://github.com/prrockzed/prrockzed.github.io',
-            },
-            {
-              label: 'Quora',
-              to: 'https://quora.com/profile/Prrockzed',
-            },
-            {
-              label: 'Reddit',
-              to: 'https://reddit.com/user/prrockzed/',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} prrockzed`,
     },
     prism: {
