@@ -4,6 +4,13 @@ sidebar_position: 1
 
 # Programming Lanugages
 
-- Python
-- JavaScript
+- C
 - C++
+- JavaScript
+- TypeScript
+- Python
+- Golang
+- Bash
+- Lua
+- HTML5
+- CSS3

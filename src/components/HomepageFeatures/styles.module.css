@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+.featureItem {
+  margin-bottom: 4rem;
+}
+
+.headingContainer {
+  margin-bottom: 4rem;
+  text-align: center;
+}

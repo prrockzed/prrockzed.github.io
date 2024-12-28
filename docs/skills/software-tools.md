@@ -6,3 +6,11 @@ sidebar_position: 3
 
 - Git
 - Github
+- VSCode
+- Terminal
+- Linux
+- Vim
+- Neovim
+- VirtualBox
+- Vercel
+- Render

@@ -8,8 +8,16 @@ sidebar_position: 1
 
 - Quantum Mechanics
 - Nuclear Physics
+- Computational Physics
 
-## Others
+## Computer Science
 
+- Programming and Data Structures
+- Programming and Data Structures Lab
 - Ubiquitous Computing
+
+## Mathematics
+
+- Linear Algebra
+- Advanced Calculus
 - Probability and Statistics
