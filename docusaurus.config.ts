@@ -80,19 +80,49 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'aboutSidebar',
           position: 'left',
           label: 'About',
         },
         {
-          to: '/blog',
-          label: 'Blogs',
-          position: 'left'
+          type: 'docSidebar',
+          sidebarId: 'experienceSidebar',
+          position: 'left',
+          label: 'Experience',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'skillsSidebar',
+          position: 'left',
+          label: 'Skills',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'coursesSidebar',
+          position: 'left',
+          label: 'Courses',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'achievementsSidebar',
+          position: 'left',
+          label: 'Achievements',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'contactMeSidebar',
+          position: 'left',
+          label: 'Contact Me',
         },
         {
           href: 'https://drive.google.com/file/d/1FSuNphePjptV4gJw8vXQwUvyBrGmC5aS/view',
           label: 'Resume',
           position: 'right',
+        },
+        {
+          to: '/blog',
+          label: 'Blogs',
+          position: 'right'
         },
         {
           to: 'https://github.com/prrockzed',
@@ -102,7 +132,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       copyright: `Copyright © ${new Date().getFullYear()} prrockzed`,
     },
     prism: {
