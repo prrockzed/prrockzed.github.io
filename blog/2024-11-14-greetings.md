@@ -2,11 +2,7 @@
 title: Greetings!
 description: This is my first blog
 slug: greetings
-authors:
-  - name: Priyanshu Ranjan
-    title: Wonderer
-    url: https://github.com/prrockzed
-    image_url: https://github.com/prrockzed.png
+authors: [blogs]
 tags: [greetings]
 ---
 
