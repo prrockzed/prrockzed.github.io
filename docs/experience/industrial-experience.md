@@ -16,7 +16,7 @@ Joining in Jan'25
 - Implemented multi-threading on server-side applications, enabling handling of 1,000 client connections
 
 ## BB Advisory
-### Financial Analyst
+### Financial Analyst Intern
 - Conducted financial analysis on forex trading technique, including the dynamics of the CFD market.
 - Utilized strategies like candlestick pattern and pivot point along with technical indicators(like Fibonacci, RSI,
 Bollinger Bands etc) and fundamental analysis to predict the future movements in currency prices.

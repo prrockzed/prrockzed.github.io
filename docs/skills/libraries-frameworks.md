@@ -11,6 +11,8 @@ sidebar_position: 2
 - Django
 - Flask
 - Selenium
+- ThreeJS
+- PyGame
 - Bootstrap
 - MongoDB
 - Numpy

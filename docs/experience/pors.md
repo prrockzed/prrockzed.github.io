@@ -4,8 +4,13 @@ sidebar_position: 3
 
 # Position of Responsibilities
 
-## Advisor @ KodeinKGP: Technology Web3.0 Society
+## KodeinKGP: Technology Web3.0 Society
 
-## Developement Team Member @ Developers' Society
+### Advisor
+### Tech Head
+### Tech Team Member
 
-## Tech Team Member @ KodeinKGP: Technology Web3.0 Society
+
+## Developers' Society
+
+### Development Member

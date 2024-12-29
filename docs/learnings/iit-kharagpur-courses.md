@@ -2,12 +2,13 @@
 sidebar_position: 1
 ---
 
-# IIT Kharagpur
+# IIT Kharagpur - Courses
 
 ## Phyics
 
 - Quantum Mechanics
 - Nuclear Physics
+- Mathematics for Physics
 - Computational Physics
 
 ## Computer Science

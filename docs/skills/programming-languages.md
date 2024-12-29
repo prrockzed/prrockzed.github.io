@@ -10,6 +10,7 @@ sidebar_position: 1
 - TypeScript
 - Python
 - Golang
+- Julia
 - Bash
 - Lua
 - HTML5

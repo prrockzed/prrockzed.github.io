@@ -98,9 +98,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'coursesSidebar',
+          sidebarId: 'learningsSidebar',
           position: 'left',
-          label: 'Courses',
+          label: 'Learnings',
         },
         {
           type: 'docSidebar',
@@ -110,9 +110,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'contactMeSidebar',
+          sidebarId: 'letsConnectSidebar',
           position: 'left',
-          label: 'Contact Me',
+          label: 'Let\'s Connect',
         },
         {
           href: 'https://drive.google.com/file/d/1FSuNphePjptV4gJw8vXQwUvyBrGmC5aS/view',

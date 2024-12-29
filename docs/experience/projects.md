@@ -4,6 +4,11 @@ sidebar_position: 2
 
 # Projects
 
-## GarudaNvim
+## Personal Projects
 
-## Chessed Platform
+### Chessed Platform
+
+### GarudaNvim
+
+
+## Projects Supervised by a Professor
