@@ -10,5 +10,13 @@ sidebar_position: 2
 
 ### GarudaNvim
 
+### Haunted House
+
+### AutoERP
+
 
 ## Projects Supervised by a Professor
+
+### Ayurvedic Consultation Platform
+
+### Fire and Smoke Detection System
