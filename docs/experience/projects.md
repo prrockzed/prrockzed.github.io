@@ -19,7 +19,7 @@ sidebar_position: 2
 - Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
 
 ### Cheats
-Note: Installed by Homebrew
+Note: Can be directly installed by Homebrew
 
 ### Haunted House
 
@@ -30,15 +30,15 @@ Note: Not a project as such. But its a first install for me on any machine.
 
 ## Projects Supervised by a Professor
 
-### Cloud-Based Fire Detection and Air Quality System with AI
+### Cloud-Based Fire Detection and Air Quality System with AI (Under Prof Bhaktha)
 
-### Ayurvedic Consultation Platform
+### Ayurvedic Consultation Platform (Under Prof Mrigank Sharad)
 - Built a robust backend with NodeJS and ExpressJS, utilizing MongoDB Atlas for efficient database management and data storage
 - Integrated Firebase authentication for secure user access and intelligent categorization based on user type: patient, doctor, or retailer
 - Integrated machine learning algorithms to automatically match patients with doctors based on prakriti determination form inputs
 - Developed a comprehensive payment interface using Razorpay, including API routes for consultation and medicine transactions
 
-### Fire and Smoke Detection System (Under Prof )
+### Fire and Smoke Detection System (Under Prof Sudip Mishra)
 - Developed an IoT-based fire detection system using ESP8266, MQTT, and MQ2 gas sensors, enhancing smoke detection accuracy
 - Integrated real-time data transmission via MQTT and Mosquitto Broker, ensuring prompt fire alerts through email notifications
 - Utilized machine learning algorithms to reduce false alarms, improving fire identification precision and overall system reliability

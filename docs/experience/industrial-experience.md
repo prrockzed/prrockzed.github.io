@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Industrial Experience
 
+## CimbaAI
+### Software Developer
+- Joining in May'25
+
 ## SuperAPI (YC W23)
 ### Software Developer Intern 
 - Integrated real-time API performance metrics such as response time, SSL handshake duration, and payload size using Performance API
