@@ -22,3 +22,8 @@ sidebar_position: 1
 - Linear Algebra
 - Advanced Calculus
 - Probability and Statistics
+
+## Entrepreneurship Courses
+
+- Digital Entrepreneurship
+- Financing New Ventures

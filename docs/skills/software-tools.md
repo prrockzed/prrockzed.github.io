@@ -8,6 +8,7 @@ sidebar_position: 3
 - Git
 - Github
 - Docker
+- Kubernetes
 - VSCode
 - Terminal
 - Linux
@@ -20,6 +21,7 @@ sidebar_position: 3
 - Railway
 - Firebase
 - Github Pages
+- Linear
 
 ## OS Platforms
 (That I am familiar with)

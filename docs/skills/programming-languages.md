@@ -6,11 +6,14 @@ sidebar_position: 1
 
 - C
 - C++
+- Java
 - JavaScript
 - TypeScript
 - Python
+- Scala
 - Golang
 - Julia
+- Z-Shell
 - Bash
 - Lua
 - HTML5
