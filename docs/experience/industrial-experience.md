@@ -5,7 +5,7 @@ sidebar_position: 1
 # Industrial Experience
 
 ## CimbaAI
-### Software Developer
+### Software Engineer
 - Joining in May'25
 
 ## SuperAPI (YC W23)

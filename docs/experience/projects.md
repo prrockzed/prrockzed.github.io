@@ -19,7 +19,7 @@ sidebar_position: 2
 - Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
 
 ### Cheats
-Note: Can be directly installed by Homebrew
+Note: Can be directly installed via Homebrew
 
 ### Haunted House
 

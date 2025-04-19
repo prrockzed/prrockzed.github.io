@@ -4,14 +4,17 @@ sidebar_position: 2
 
 # Open Source
 
-## GSSoC
-Project Admin and Contributor
+## Project Admin
+- KWoC - Kharagpur Winter of Code
 
-## KWoC
-Project Admin
+- SWoC - Social Winter of Code
 
-## SWoC
-Project Admin
+- GSSoC - Girlscript Summer of Code
 
-## SSoC
-Contributor
+- SSoC - Social Summer of Code
+
+## Contributor
+
+- GSSoC - Girlscript Summer of Code
+
+- SSoC - Social Summer of Code

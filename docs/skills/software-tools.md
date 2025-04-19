@@ -22,6 +22,7 @@ sidebar_position: 3
 - Firebase
 - Github Pages
 - Linear
+- Latex
 
 ## OS Platforms
 (That I am familiar with)

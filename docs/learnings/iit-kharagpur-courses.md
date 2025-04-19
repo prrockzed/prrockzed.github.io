@@ -25,5 +25,5 @@ sidebar_position: 1
 
 ## Entrepreneurship Courses
 
-- Digital Entrepreneurship
 - Financing New Ventures
+- Digital Entrepreneurship

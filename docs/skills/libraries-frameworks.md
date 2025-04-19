@@ -26,4 +26,3 @@ sidebar_position: 2
 - Docusaurus
 - Redis
 - PostgreSQL
-- MongoDB
