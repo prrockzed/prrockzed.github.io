@@ -18,6 +18,12 @@ sidebar_position: 2
 - Optimized user experience with over 100 custom keymaps, 25+ plugin configurations, and efficient error handling for development workflows
 - Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
 
+### SummarizeWebPageAI
+
+### Deribit Trading System
+
+### Docker Log Streamer
+
 ### Cheats
 Note: Can be directly installed via Homebrew
 
@@ -43,11 +49,3 @@ Note: Not a project as such. But its a first install for me on any machine.
 - Integrated real-time data transmission via MQTT and Mosquitto Broker, ensuring prompt fire alerts through email notifications
 - Utilized machine learning algorithms to reduce false alarms, improving fire identification precision and overall system reliability
 - Addressed market gaps with a dual-layered detection approach, ensuring timely and accurate hazard alerts for enhanced fire safety
-
-## Projects Done as Assignments
-
-### SummarizeWebPageAI
-
-### Deribit Trading System
-
-### Docker Log Streamer
