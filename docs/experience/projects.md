@@ -19,8 +19,22 @@ sidebar_position: 2
 - Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
 
 ### SummarizeWebPageAI
+- Engineered a scalable microservices architecture with React, Spring Boot, Scala, and PostgreSQL, ensuring efficient data pipelines and persistent storage for summaries
+- Integrated an AI-driven summarization engine using Python FastAPI and Google Gemini LLM, enabling automated extraction of key insights from unstructured website content
+- Deployed containerized services with Docker and Helm, implementing orchestration strategies aligned with enterprise-grade cloud-native infrastructure standards
+- Delivered user-facing features for real-time summarization, historical search, and data retrieval, supporting intelligent information management and decision-making workflows
 
 ### Deribit Trading System
+- Built a high-performance trading system in C++ with multi-threaded WebSocket server for real-time market data streaming and order execution
+- Integrated Deribit Testnet API with OAuth2 authentication, enabling seamless placement, cancellation, and modification of spot, futures, and options orders
+- Implemented performance monitoring tools to capture WebSocket propagation, order processing, and API latency metrics for system optimization
+- Designed a command-line interface supporting live order book visualization, position tracking, and instrument management for efficient trading operations
+
+### LinkedinOS
+- Engineered a full-stack Python automation platform using Selenium and BeautifulSoup4 to systematically scrape founder data from Y Combinator and send personalized LinkedIn connection requests.
+- Implemented secure OAuth 2.0 integration with the Google Sheets API to automatically structure and store scraped company and founder data for centralized intelligence.
+- Developed advanced state management to intelligently handle connection request responses (Pending, Already Connected, Email Required) and log outcomes to a JSON file for analytics.
+- Designed a robust, menu-driven CLI architecture with modular components for batch selection, scraping, and connection management, ensuring scalability and ease of use.
 
 ### Docker Log Streamer
 
