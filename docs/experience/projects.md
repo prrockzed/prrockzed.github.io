@@ -18,12 +18,6 @@ sidebar_position: 2
 - Optimized user experience with over 100 custom keymaps, 25+ plugin configurations, and efficient error handling for development workflows
 - Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
 
-### SummarizeWebPageAI
-- Engineered a scalable microservices architecture with React, Spring Boot, Scala, and PostgreSQL, ensuring efficient data pipelines and persistent storage for summaries
-- Integrated an AI-driven summarization engine using Python FastAPI and Google Gemini LLM, enabling automated extraction of key insights from unstructured website content
-- Deployed containerized services with Docker and Helm, implementing orchestration strategies aligned with enterprise-grade cloud-native infrastructure standards
-- Delivered user-facing features for real-time summarization, historical search, and data retrieval, supporting intelligent information management and decision-making workflows
-
 ### Deribit Trading System
 - Built a high-performance trading system in C++ with multi-threaded WebSocket server for real-time market data streaming and order execution
 - Integrated Deribit Testnet API with OAuth2 authentication, enabling seamless placement, cancellation, and modification of spot, futures, and options orders
@@ -36,21 +30,31 @@ sidebar_position: 2
 - Developed advanced state management to intelligently handle connection request responses (Pending, Already Connected, Email Required) and log outcomes to a JSON file for analytics.
 - Designed a robust, menu-driven CLI architecture with modular components for batch selection, scraping, and connection management, ensuring scalability and ease of use.
 
-### Docker Log Streamer
+### SummarizeWebPageAI
+- Engineered a scalable microservices architecture with React, Spring Boot, Scala, and PostgreSQL, ensuring efficient data pipelines and persistent storage for summaries
+- Integrated an AI-driven summarization engine using Python FastAPI and Google Gemini LLM, enabling automated extraction of key insights from unstructured website content
+- Deployed containerized services with Docker and Helm, implementing orchestration strategies aligned with enterprise-grade cloud-native infrastructure standards
+- Delivered user-facing features for real-time summarization, historical search, and data retrieval, supporting intelligent information management and decision-making workflows
 
-### Cheats
-Note: Can be directly installed via Homebrew
+### Docker Log Streamer
+- Designed and implemented a full-stack web application for real-time streaming, searching, and filtering of Docker container logs using WebSocket and REST APIs
+- Engineered a scalable backend with Node.js, Express.js, and MongoDB Atlas, ensuring persistent log storage and efficient query performance
+- Developed a React.js frontend with dedicated components for live logs, search functionality, and timestamp-based filtering, enhancing user experience
+- Deployed the system on Render and Vercel, integrating containerized log generation with remote streaming for robust and seamless operation
 
 ### Haunted House
-
-### AutoERP
-
-### dotconfig files
-Note: Not a project as such. But its a first install for me on any machine.
+- Built an immersive 3D haunted environment using Three.js, enabling interactive navigation with realistic lighting, fog effects, and atmospheric rendering
+- Designed detailed models including textured walls, doors, graves, and animated ghost characters, enhancing the overall spooky environment and user engagement
+- Implemented dynamic lighting effects with point lights, spotlights, and animated ghost lights to create eerie and responsive visual experiences
+- Optimized performance through texture mapping, geometry reuse, and efficient rendering techniques, ensuring smooth frame rates across devices
 
 ## Projects Supervised by a Professor
 
 ### Cloud-Based Fire Detection and Air Quality System with AI (Under Prof Bhaktha)
+- Designed an IoT-enabled system integrating fire and air quality sensors (MQ2, MQ135) with microcontrollers, enabling accurate hazard detection within 5–10 ft range
+- Developed a cloud architecture using MQTT and MongoDB Atlas for secure, real-time data ingestion, scalable storage, and centralized monitoring across multiple nodes
+- Built a MERN stack dashboard with live logs, data visualization, and downloadable reports, ensuring <1s latency updates and user-friendly access to historical data
+- Incorporated AI-based anomaly detection with Gemini models and WebSocket-driven alerts, reducing false positives and enhancing overall system reliability
 
 ### Ayurvedic Consultation Platform (Under Prof Mrigank Sharad)
 - Built a robust backend with NodeJS and ExpressJS, utilizing MongoDB Atlas for efficient database management and data storage
