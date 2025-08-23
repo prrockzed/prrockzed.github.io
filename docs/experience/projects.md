@@ -53,7 +53,7 @@ sidebar_position: 2
 ### Cloud-Based Fire Detection and Air Quality System with AI (Under Prof Bhaktha)
 - Designed an IoT-enabled system integrating fire and air quality sensors (MQ2, MQ135) with microcontrollers, enabling accurate hazard detection within 5–10 ft range
 - Developed a cloud architecture using MQTT and MongoDB Atlas for secure, real-time data ingestion, scalable storage, and centralized monitoring across multiple nodes
-- Built a MERN stack dashboard with live logs, data visualization, and downloadable reports, ensuring <1s latency updates and user-friendly access to historical data
+- Built a MERN stack dashboard with live logs, data visualization, and downloadable reports, ensuring < 1s latency updates and user-friendly access to historical data
 - Incorporated AI-based anomaly detection with Gemini models and WebSocket-driven alerts, reducing false positives and enhancing overall system reliability
 
 ### Ayurvedic Consultation Platform (Under Prof Mrigank Sharad)
