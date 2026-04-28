@@ -6,6 +6,13 @@ sidebar_position: 2
 
 ## Personal Projects
 
+### Triveo
+- Architected a multi-tenant SaaS backend in Go (Gin) with 4-layer design, 30+ REST API endpoints, JWT-based RBAC, and PostgreSQL
+- Integrated Google Gemini 2.5 Flash as an AI menu chatbot with dynamic context injection and session state, using Claude Code
+- Engineered a 3-tier subscription billing system in Go with Dodo Payments checkout sessions, webhook handling, and plan-based resource limits
+- Dockerized Go backend with multi-stage Alpine build, deployed to Railway via GitHub CI/CD with Cloudflare R2 for file storage
+- Built a Next.js 14 (TypeScript) menu UI with 3D food visualization, AR mode (iOS/Android), QR deep-linking, deployed on Vercel
+
 ### Chessed Platform
 - Successfully developed a four-player chess platform using React and TypeScript, allowing simultaneous gameplay on a single board
 - Utilized TypeScript interfaces to identify potential errors and React hooks for dynamic component state management and updates
@@ -13,10 +20,10 @@ sidebar_position: 2
 - Enabled endgame scenarios with capturing, checkmate detection, ensuring valid moves, game termination when a player is checkmated
 
 ### GarudaNvim
-- Developed GarudaNvim, a customizable code editor and Neovim distribution written in Lua, enhancing efficiency with custom configurations
-- Implemented features like easy installation with bash scripts, plugin version freezing, Noice for dynamic UI messages and various themes
-- Optimized user experience with over 100 custom keymaps, 25+ plugin configurations, and efficient error handling for development workflows
-- Built a documented site using MkDocs, reflecting installation, features, current and past releases and how-to guides for seamless onboarding
+- Developed GarudaNvim, a customizable Neovim distribution written in Lua, improving developer productivity through tailored configurations
+- Designed features like one-command installation using Bash scripts, plugin version locking, and dynamic UI enhancements with theme support
+- Enhanced user experience with 100+ custom keymaps, 35+ plugin integrations, and robust error handling for streamlined development workflows
+- Shipped a documentation website using MkDocs, including installation guides, feature overviews, release history, and onboarding resources
 
 ### Deribit Trading System
 - Built a high-performance trading system in C++ with multi-threaded WebSocket server for real-time market data streaming and order execution
@@ -57,10 +64,13 @@ sidebar_position: 2
 - Incorporated AI-based anomaly detection with Gemini models and WebSocket-driven alerts, reducing false positives and enhancing overall system reliability
 
 ### Ayurvedic Consultation Platform (Under Prof Mrigank Sharad)
-- Built a robust backend with NodeJS and ExpressJS, utilizing MongoDB Atlas for efficient database management and data storage
+- Architected multi-role backend (doctors, patients, admins, retailers) with JWT auth, RBAC, and session management in Node.js/Express
 - Integrated Firebase authentication for secure user access and intelligent categorization based on user type: patient, doctor, or retailer
 - Integrated machine learning algorithms to automatically match patients with doctors based on prakriti determination form inputs
+- Designed MongoDB schema across 5+ domains; built RESTful APIs for appointments, products and payments with centralized error handling
 - Developed a comprehensive payment interface using Razorpay, including API routes for consultation and medicine transactions
+- Engineered concurrent slot-booking engine with locking to prevent race conditions, with real-time availability tracking and notifications
+- Deployed full-stack to Railway (backend), MongoDB Atlas, and Vercel (frontend) with Hostinger domain and env-based config management
 
 ### Fire and Smoke Detection System (Under Prof Sudip Mishra)
 - Developed an IoT-based fire detection system using ESP8266, MQTT, and MQ2 gas sensors, enhancing smoke detection accuracy

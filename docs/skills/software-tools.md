@@ -10,6 +10,10 @@ sidebar_position: 3
 - Docker
 - Kubernetes
 - VSCode
+- IntelliJ Idea
+- PyCharm
+- Cursor
+- Claude Code
 - Terminal
 - Linux
 - Vim
@@ -19,10 +23,16 @@ sidebar_position: 3
 - Render
 - Netlify
 - Railway
+- Neon
 - Firebase
 - Github Pages
 - Linear
 - Latex
+- Azure Cloud Services
+- Azure DevOps
+- CI/CD
+- RabbitMQ
+- DuckDB
 
 ## OS Platforms
 (That I am familiar with)

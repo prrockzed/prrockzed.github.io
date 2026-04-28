@@ -13,6 +13,7 @@ sidebar_position: 2
 - Django
 - Flask
 - Selenium
+- Playwright
 - ThreeJS
 - PyGame
 - Bootstrap
@@ -26,3 +27,8 @@ sidebar_position: 2
 - Docusaurus
 - Redis
 - PostgreSQL
+- Pydantic
+- GraphQL
+- Gin
+- GORM
+- REST API
