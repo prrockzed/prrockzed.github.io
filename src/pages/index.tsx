@@ -33,6 +33,20 @@ function HomepageHeader() {
             View Resume
           </Link>
         </div>
+        <div className={styles.socialButtons}>
+          <Link
+            className={clsx('button button--outline button--lg', styles.resumeBtn)}
+            href="https://linkedin.com/in/prrockzed"
+            target="_blank">
+            LinkedIn
+          </Link>
+          <Link
+            className={clsx('button button--outline button--lg', styles.resumeBtn)}
+            href="https://github.com/prrockzed"
+            target="_blank">
+            GitHub
+          </Link>
+        </div>
       </div>
       <div className={styles.scrollHint}>
         <span className={styles.scrollDot} />

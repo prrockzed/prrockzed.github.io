@@ -130,16 +130,18 @@
   margin: 0;
   background: linear-gradient(
     135deg,
+    #b35000,
     var(--ifm-color-primary),
-    var(--ifm-color-primary-lightest),
-    var(--ifm-color-primary)
+    #ffe0a0,
+    var(--ifm-color-primary),
+    #b35000
   );
-  background-size: 200% 200%;
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation:
-    gradient-shift 4s ease infinite,
+    gradient-shift 5s ease infinite,
     fadeInUp 0.6s ease both;
   animation-delay: 0s, 0.08s;
 }
@@ -190,6 +192,16 @@
 .resumeBtn:hover {
   background-color: var(--ifm-color-primary);
   color: #fff;
+}
+
+.socialButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.32s;
 }
 
 /* ── Scroll indicator ──────────────────────────────── */
@@ -254,6 +266,17 @@
   }
 
   .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .socialButtons a {
     width: 100%;
     text-align: center;
   }
