@@ -76,7 +76,7 @@ function Feature({ title, Svg, description, source }: FeatureItem) {
   return (
     <div className={clsx('col col--4', styles.featureItem)}>
       <div className={styles.featureCard}>
-        <div className="text--center">
+        <div className={styles.iconWrapper}>
           <Svg className={styles.featureSvg} role="img" />
         </div>
         <div className="text--center padding-horiz--md">

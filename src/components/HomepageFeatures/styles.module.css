@@ -5,24 +5,61 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 160px;
-  width: 160px;
-}
-
 .featureItem {
   margin-bottom: 2rem;
 }
 
+/* circular icon container with ambient glow */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0 auto 1.25rem;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.14) 0%, transparent 75%);
+}
+
+.featureSvg {
+  height: 56px;
+  width: 56px;
+}
+
+/* glassmorphism card with gradient border via pseudo-element */
 .featureCard {
+  position: relative;
   background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 1.75rem;
   height: 100%;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+/* gradient border (works with border-radius via mask) */
+.featureCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary),
+    transparent 50%,
+    var(--ifm-color-primary-lighter)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.35;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
 }
 
 .featureCard:hover {
@@ -30,9 +67,37 @@
   box-shadow: var(--card-shadow-hover);
 }
 
+.featureCard:hover::before {
+  opacity: 0.75;
+}
+
 .headingContainer {
   margin-bottom: 3rem;
   text-align: center;
+}
+
+/* gradient underline on the section heading */
+.headingContainer h1 {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.headingContainer h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--ifm-color-primary),
+    transparent
+  );
 }
 
 .source {

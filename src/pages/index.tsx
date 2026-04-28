@@ -10,7 +10,9 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.heroBanner}>
-      <div className={styles.heroGlow} />
+      <div className={styles.orb1} />
+      <div className={styles.orb2} />
+      <div className={styles.orb3} />
       <div className={styles.heroContent}>
         <p className={styles.heroRole}>Software Engineer · Backend · IIT Kharagpur</p>
         <h1 className={styles.heroName}>Priyanshu Ranjan</h1>
@@ -31,6 +33,9 @@ function HomepageHeader() {
             View Resume
           </Link>
         </div>
+      </div>
+      <div className={styles.scrollHint}>
+        <span className={styles.scrollDot} />
       </div>
     </header>
   );
