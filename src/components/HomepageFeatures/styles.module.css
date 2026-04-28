@@ -1,20 +1,43 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0 4rem;
   width: 100%;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
 }
 
 .featureItem {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.featureCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .headingContainer {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-align: center;
+}
+
+.source {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--role-color);
+  margin-top: 0.5rem;
 }

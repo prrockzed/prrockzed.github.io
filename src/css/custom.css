@@ -13,6 +13,12 @@
   --ifm-color-primary-lightest: #ffaf4d;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --hero-bg-dot-color: rgba(255, 140, 0, 0.12);
+  --hero-glow-color: rgba(255, 140, 0, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-border: rgba(255, 140, 0, 0.2);
+  --card-shadow-hover: 0 8px 32px rgba(255, 140, 0, 0.2);
+  --role-color: #666;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -25,6 +31,12 @@
   --ifm-color-primary-lighter: #ffb426;
   --ifm-color-primary-lightest: #ffc54d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hero-bg-dot-color: rgba(255, 165, 0, 0.07);
+  --hero-glow-color: rgba(255, 165, 0, 0.06);
+  --card-bg: rgba(30, 30, 30, 0.6);
+  --card-border: rgba(255, 165, 0, 0.2);
+  --card-shadow-hover: 0 8px 32px rgba(255, 165, 0, 0.15);
+  --role-color: #aaa;
 }
 
 .features {
