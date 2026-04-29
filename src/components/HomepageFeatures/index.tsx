@@ -11,6 +11,16 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
+    title: 'Resilience',
+    Svg: require('@site/static/img/resilience.svg').default,
+    description: (
+      <>
+        Life isn’t about waiting for the storm to pass; it’s about learning to dance in the rain
+      </>
+    ),
+    source: 'Vivian Greene',
+  },
+  {
     title: 'Perseverance',
     Svg: require('@site/static/img/perseverance.svg').default,
     description: (
@@ -19,16 +29,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     source: 'Swami Vivekananda',
-  },
-  {
-    title: 'Karma',
-    Svg: require('@site/static/img/karma.svg').default,
-    description: (
-      <>
-        You have the right to perform your duty, but not the fruits of your actions
-      </>
-    ),
-    source: 'Bhagavad Gita 2.47',
   },
   {
     title: 'Determination',
@@ -51,6 +51,16 @@ const FeatureList: FeatureItem[] = [
     source: 'Dr. APJ Abdul Kalam',
   },
   {
+    title: 'Karma',
+    Svg: require('@site/static/img/karma.svg').default,
+    description: (
+      <>
+        You have the right to perform your duty, but not the fruits of your actions
+      </>
+    ),
+    source: 'Bhagavad Gita 2.47',
+  },
+  {
     title: 'Kindness',
     Svg: require('@site/static/img/kindness.svg').default,
     description: (
@@ -59,16 +69,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     source: 'Aesop',
-  },
-  {
-    title: 'Resilience',
-    Svg: require('@site/static/img/resilience.svg').default,
-    description: (
-      <>
-        Life isn’t about waiting for the storm to pass; it’s about learning to dance in the rain
-      </>
-    ),
-    source: 'Vivian Greene',
   },
 ];
 

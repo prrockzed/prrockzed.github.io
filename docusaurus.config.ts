@@ -99,7 +99,7 @@ const config: Config = {
           label: 'Let\'s Connect',
         },
         {
-          href: 'https://drive.google.com/file/d/1Mk4UGkqLQE5kBoLXUr1HTm0WfGg7avMR/view?usp=sharing',
+          href: 'https://drive.google.com/file/d/18hKNyC_lCC5DaDbYHovXbgISXENPR_K1/view?usp=sharing',
           label: 'Resume',
           position: 'right',
         },
