@@ -30,13 +30,44 @@
   --ifm-color-primary-light: #ffb01a;
   --ifm-color-primary-lighter: #ffb426;
   --ifm-color-primary-lightest: #ffc54d;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --hero-bg-dot-color: rgba(255, 165, 0, 0.07);
-  --hero-glow-color: rgba(255, 165, 0, 0.06);
-  --card-bg: rgba(30, 30, 30, 0.6);
-  --card-border: rgba(255, 165, 0, 0.2);
-  --card-shadow-hover: 0 8px 32px rgba(255, 165, 0, 0.15);
-  --role-color: #aaa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.5);
+  /* Dots more vivid on pure black */
+  --hero-bg-dot-color: rgba(255, 165, 0, 0.10);
+  --hero-glow-color: rgba(255, 165, 0, 0.09);
+  /* Cards need more opacity to stand out against black */
+  --card-bg: rgba(24, 24, 24, 0.88);
+  --card-border: rgba(255, 165, 0, 0.22);
+  --card-shadow-hover: 0 8px 36px rgba(255, 165, 0, 0.22);
+  --role-color: #999;
+}
+
+/* ── Override Infima's grey dark-mode backgrounds → pure black ── */
+/* Must use html[data-theme='dark'] to match Infima specificity    */
+html[data-theme='dark'] {
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #0d0d0d;
+  /* Navbar inherits surface; give it a translucent black for the blur */
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.75);
+  /* Footer */
+  --ifm-footer-background-color: #060606;
+  /* Code blocks — dark grey on black (not white-tinted) */
+  --ifm-code-background: #141414;
+  --ifm-pre-background: #141414;
+  /* Slightly brighter body text on pure black for comfortable reading */
+  --ifm-color-content: #e8e8e8;
+  /* Table stripe — warm orange tint instead of white */
+  --ifm-table-stripe-background: rgba(255, 165, 0, 0.04);
+
+  /* Fixed ambient background lives on <html> in dark mode so it sits UNDER
+     every element. Sidebar/footer are then made transparent so the orbs
+     bleed through — no more hard edge when scrolling.
+     rgba(color,0) avoids the grey midpoint that `transparent` would produce. */
+  background-image:
+    radial-gradient(ellipse at 88% 12%, rgba(255, 140, 0, 0.13) 0%, rgba(255, 140, 0, 0) 65%),
+    radial-gradient(ellipse at 12% 88%, rgba(255, 165, 0, 0.09) 0%, rgba(255, 165, 0, 0) 65%),
+    radial-gradient(var(--hero-bg-dot-color) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
+  background-attachment: fixed;
 }
 
 .features {
@@ -49,4 +80,428 @@
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL KEYFRAMES (reused across pages)
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL BACKGROUND — dotted pattern + ambient orange glows
+   Extends the home page visual language to all pages
+   ═══════════════════════════════════════════════════════════════ */
+
+body {
+  /* Use rgba(color,0) not `transparent` — prevents the grey midpoint artifact
+     on dark backgrounds. Extend to 65% for a gradual, seamless fade.        */
+  background-image:
+    radial-gradient(ellipse at 88% 12%, rgba(255, 140, 0, 0.07) 0%, rgba(255, 140, 0, 0) 65%),
+    radial-gradient(ellipse at 12% 88%, rgba(255, 165, 0, 0.05) 0%, rgba(255, 165, 0, 0) 65%),
+    radial-gradient(var(--hero-bg-dot-color) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
+  background-attachment: fixed;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVBAR
+   ═══════════════════════════════════════════════════════════════ */
+
+.navbar {
+  border-bottom: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SIDEBAR
+   ═══════════════════════════════════════════════════════════════ */
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--card-border) !important;
+}
+
+.menu__link {
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.menu__link:hover {
+  background: rgba(255, 140, 0, 0.08) !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Active doc link — orange pill with left accent bar */
+.menu__link--active:not(.menu__link--sublist) {
+  background: rgba(255, 140, 0, 0.12) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Sidebar category headings */
+.menu__link--sublist,
+.menu__list-item-collapsible .menu__link--sublist {
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MARKDOWN CONTENT TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════ */
+
+/* h1 — animated gradient text matching the hero name */
+.markdown > h1:first-child {
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    #b35000,
+    var(--ifm-color-primary) 38%,
+    #ffe0a0 65%,
+    var(--ifm-color-primary)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s ease infinite;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* h2 — orange accent underline */
+.markdown h2 {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+.markdown h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), transparent);
+}
+
+/* h3 — orange tint */
+.markdown h3 {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+/* Better readability */
+.markdown p {
+  line-height: 1.85;
+}
+
+/* List bullet/number markers */
+.markdown ul li::marker {
+  color: var(--ifm-color-primary);
+}
+
+.markdown ol li::marker {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+/* Blockquote with orange left border */
+.markdown blockquote {
+  border-left: 3px solid var(--ifm-color-primary) !important;
+  background: rgba(255, 140, 0, 0.05) !important;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Inline code — orange tint */
+.markdown :not(pre) > code {
+  background: rgba(255, 140, 0, 0.08) !important;
+  color: var(--ifm-color-primary) !important;
+  border: 1px solid rgba(255, 140, 0, 0.18);
+  border-radius: 4px;
+}
+
+/* Tables — rounded with orange header row */
+.markdown table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  display: table !important;
+  width: 100%;
+}
+
+.markdown th {
+  background: rgba(255, 140, 0, 0.1) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid var(--card-border) !important;
+}
+
+.markdown tr:nth-child(even) td {
+  background: rgba(255, 140, 0, 0.02);
+}
+
+.markdown tr:hover td {
+  background: rgba(255, 140, 0, 0.04) !important;
+}
+
+/* Fade-in for doc content on page load */
+.theme-doc-markdown.markdown {
+  animation: fadeInUp 0.35s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BREADCRUMBS
+   ═══════════════════════════════════════════════════════════════ */
+
+.breadcrumbs__link {
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.breadcrumbs__link:hover {
+  background: rgba(255, 140, 0, 0.08) !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TABLE OF CONTENTS (right-panel TOC)
+   ═══════════════════════════════════════════════════════════════ */
+
+.theme-doc-toc-desktop {
+  border-left: 1px solid var(--card-border);
+}
+
+.table-of-contents__link {
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 3px 8px;
+  display: block;
+  color: var(--role-color);
+}
+
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary) !important;
+  background: rgba(255, 140, 0, 0.07);
+  text-decoration: none !important;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  background: rgba(255, 140, 0, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PAGINATION NAV — glassmorphic Prev / Next cards
+   ═══════════════════════════════════════════════════════════════ */
+
+.pagination-nav {
+  gap: 1rem;
+}
+
+.pagination-nav__link {
+  border: 1px solid var(--card-border) !important;
+  border-radius: 12px !important;
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
+  padding: 1rem 1.25rem;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+  background: rgba(255, 140, 0, 0.04) !important;
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--role-color);
+}
+
+.pagination-nav__label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ifm-color-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DOC PAGE FOOTER (edit link, last updated)
+   ═══════════════════════════════════════════════════════════════ */
+
+.theme-doc-footer {
+  border-top: 1px solid var(--card-border);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.theme-edit-this-page {
+  color: var(--role-color) !important;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.theme-edit-this-page:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOG — article cards and tags
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Blog post preview cards on listing page */
+article.margin-bottom--xl {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+article.margin-bottom--xl:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Tags (blog + docs) */
+.tag {
+  border: 1px solid var(--card-border) !important;
+  border-radius: 100px !important;
+  background: rgba(255, 140, 0, 0.06) !important;
+  color: var(--ifm-color-primary) !important;
+  transition: all 0.2s ease;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.65rem;
+}
+
+.tag:hover {
+  background: rgba(255, 140, 0, 0.15) !important;
+  border-color: var(--ifm-color-primary) !important;
+  text-decoration: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════════ */
+
+.footer {
+  border-top: 1px solid var(--card-border);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DARK MODE — per-element refinements for pure black background
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Dark mode: html carries the fixed background — clear it from body so the
+   orbs aren't painted twice (html sits behind body in the stacking order). */
+[data-theme='dark'] body {
+  background-image: none;
+}
+
+/* Doc h1: start from a brighter orange so #b35000 doesn't get
+   lost against black — shift to #cc6000 */
+[data-theme='dark'] .markdown > h1:first-child {
+  background: linear-gradient(
+    135deg,
+    #cc6000,
+    var(--ifm-color-primary) 38%,
+    #ffedb5 65%,
+    var(--ifm-color-primary)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s ease infinite;
+}
+
+/* Blockquote — slightly warmer tint on black */
+[data-theme='dark'] .markdown blockquote {
+  background: rgba(255, 165, 0, 0.08) !important;
+}
+
+/* Inline code — more visible on black */
+[data-theme='dark'] .markdown :not(pre) > code {
+  background: rgba(255, 165, 0, 0.11) !important;
+  border-color: rgba(255, 165, 0, 0.28);
+}
+
+/* Table header row — slightly more punch on black */
+[data-theme='dark'] .markdown th {
+  background: rgba(255, 165, 0, 0.13) !important;
+}
+
+/* Even table rows — visible on black (white tint too subtle there) */
+[data-theme='dark'] .markdown tr:nth-child(even) td {
+  background: rgba(255, 165, 0, 0.04);
+}
+
+/* Sidebar active state — a touch brighter on black */
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background: rgba(255, 165, 0, 0.15) !important;
+}
+
+/* Blog preview cards — opaque enough to read on black */
+[data-theme='dark'] article.margin-bottom--xl {
+  background: rgba(20, 20, 20, 0.96);
+}
+
+/* Sidebar + footer become frosted-glass so the html-level orbs/dots
+   bleed through — no more hard clipping edge when scrolling.          */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+[data-theme='dark'] .footer {
+  background: rgba(0, 0, 0, 0.18) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
