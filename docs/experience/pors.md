@@ -7,7 +7,7 @@ sidebar_position: 3
 ## KodeinKGP: Technology Web3.0 Society
 
 ### Advisor
-- Oversaw the working of the team as a senior member of the society
+- Oversaw the working of the team as a senior member of the society, providing strategic guidance to maintain and grow the society's technical initiatives.
 
 ### Tech Head
 - Conducted a 2 months Web3.0 Summer Training Programme with Lumos Labs attracting 600+ participants from the institute

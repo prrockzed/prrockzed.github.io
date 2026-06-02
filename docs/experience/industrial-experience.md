@@ -4,9 +4,14 @@ sidebar_position: 1
 
 # Industrial Experience
 
+## Cuepilot AI
+### Backend Engineer
+#### [ Jun'26 - Present ]
+- Coming Soon
+
 ## Cimba.ai
 ### Software Engineer
-#### [ May'25 - Present ]
+#### [ May'25 - May'26 ]
 - Designed a provider-agnostic LLM routing layer (Gemini, Azure OpenAI, Claude) with automatic failover and circuit-breaker semantics — decoupling inference logic from provider-specific SDKs and eliminating single-provider downtime across all users
 - Built an LLM-powered RLS validation system with prompt-based evaluation and false-negative detection — flagging RLS violations 85% faster (6s vs 40+ seconds), reducing security misconfigurations and improving user-facing error visibility
 - Redesigned the file ingestion pipeline with a streaming architecture — decoupling upload from processing, offloading XLSX/CSV parsing to async workers with DuckDB-backed query optimization — scaling limits from 100MB to 240MB and reducing failures to near-zero
