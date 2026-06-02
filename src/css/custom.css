@@ -137,13 +137,14 @@ body {
 
 .menu__link {
   border-radius: 8px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, margin-right 0.2s ease;
   font-size: 0.875rem;
 }
 
 .menu__link:hover {
   background: rgba(255, 140, 0, 0.08) !important;
   color: var(--ifm-color-primary) !important;
+  margin-right: 8px;
 }
 
 /* Active doc link — orange pill with left accent bar */
@@ -153,6 +154,7 @@ body {
   font-weight: 700;
   border-left: 3px solid var(--ifm-color-primary);
   border-radius: 0 8px 8px 0;
+  margin-right: 8px;
 }
 
 /* Sidebar category headings */
