@@ -6,6 +6,18 @@ sidebar_position: 2
 
 ## Personal Projects
 
+### AgentScope
+- Built a local-first observability and debugging platform for AI agents, making every LLM decision, tool call, retry, and failure visible through a real-time trace viewer — designed as Chrome DevTools + Datadog for LangGraph agents
+- Engineered a microservices architecture with Next.js frontend, Spring Boot REST backend, and FastAPI/LangGraph Python runtime, connected via WebSockets for live step-by-step trace streaming into PostgreSQL
+- Implemented multi-agent orchestration supporting 10 built-in agent types and 20+ LLM models across Ollama, OpenAI, Groq, Anthropic, and Gemini, with per-run model selection, side-by-side run comparison, replay, and cancellation
+- Developed an autonomous improvement pipeline including AI-powered accuracy evaluation, regression scoring, failure reason tagging (15+ reason codes), optimization advisor, and agent instruction patching; integrated Prometheus and Grafana for production monitoring with 8 live dashboard panels
+
+### FinancialPortfolioAggregator
+- Built a full-stack investment portfolio aggregator that ingests financial data from three independent sources (Orders, MF Central, Account Aggregator) with intelligent deduplication of overlapping records across sources
+- Engineered a FastAPI (Python 3.11) backend with layered service architecture for data parsing, aggregation, and analytics computation, exposing Swagger-documented REST endpoints with Pydantic response models
+- Developed a React 18 (Vite) frontend with reusable components, Axios-based API layer, React Context for global state management, and a comprehensive investment dashboard with portfolio analytics and visualizations
+- Containerized both services with Docker and Docker Compose for single-command reproducible deployment, supporting both local development and production environments
+
 ### Triveo
 - Architected a multi-tenant SaaS backend in Go (Gin) with 4-layer design, 30+ REST API endpoints, JWT-based RBAC, and PostgreSQL
 - Integrated Google Gemini 2.5 Flash as an AI menu chatbot with dynamic context injection and session state, using Claude Code
