@@ -67,6 +67,12 @@ sidebar_position: 2
 - Implemented dynamic lighting effects with point lights, spotlights, and animated ghost lights to create eerie and responsive visual experiences
 - Optimized performance through texture mapping, geometry reuse, and efficient rendering techniques, ensuring smooth frame rates across devices
 
+### sportscli
+- Built and published `sportscli` as a pip-installable Python CLI tool that streams live sports data — scores, standings, fixtures, and player stats — directly into the terminal without leaving the development workflow
+- Integrated three free public APIs (Lichess for Chess, cricketdata.org for Cricket, football-data.org for Football) covering 8 leagues including the UCL and FIFA World Cup, with automatic first-run API key prompting and secure config storage in `~/.config/sportscli/config.json`
+- Architected a modular plugin pattern where each sport is a fully self-contained module (client, display, app), enabling new sports to be added with no changes to any existing code
+- Implemented an interactive configuration wizard (`sports config setup`) with partial-key masking for display and per-sport key management; released on PyPI with a clean build and upload pipeline via `python-build` and `twine`
+
 ## Projects Supervised by a Professor
 
 ### Cloud-Based Fire Detection and Air Quality System with AI (Under Prof Bhaktha)
